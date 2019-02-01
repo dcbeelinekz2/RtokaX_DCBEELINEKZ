@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes" ?>
+<PtokaX Version="0.5.0.0">
+    <Booleans>
+        <Bool Name="AntiMoGlo">1</Bool>
+        <!-- Anti MoGlo description -->
+        <Bool Name="AutoStart">0</Bool>
+        <!-- Hub autostart, service version always start automatically! -->
+        <Bool Name="RedirectAll">0</Bool>
+        <!-- Redirect all connecting users -->
+        <Bool Name="RedirectWhenHubFull">1</Bool>
+        <!-- Redirect users when hub is full -->
+        <Bool Name="AutoRegister">1</Bool>
+        <!-- Automatically register to hublist -->
+        <Bool Name="RegOnly">0</Bool>
+        <!-- Hub for registered users only -->
+        <Bool Name="RegOnlyRedir">0</Bool>
+        <!-- Redirect non-registered users when hub is for registered users only -->
+        <Bool Name="ShareLimitRedir">1</Bool>
+        <!-- Redirect user when he's don't have share limit -->
+        <Bool Name="SlotsLimitRedir">1</Bool>
+        <!-- Redirect user when he's don't have slot limit -->
+        <Bool Name="HubSlotRatioRedir">1</Bool>
+        <!-- Redirect user when he's don't have hub/slot ratio limit -->
+        <Bool Name="MaxHubsLimitRedir">1</Bool>
+        <!-- Redirect user when he's don't have max hubs limit -->
+        <Bool Name="ModeToMyINFO">1</Bool>
+        <!-- Add user mode to MyINFO command. -->
+        <Bool Name="ModeToDescription">0</Bool>
+        <!-- Add user mode to description. -->
+        <Bool Name="StripDescription">0</Bool>
+        <!-- Strip user description. -->
+        <Bool Name="StripTag">1</Bool>
+        <!-- Strip user description tag. -->
+        <Bool Name="StripConnection">0</Bool>
+        <!-- Strip user connection. -->
+        <Bool Name="StripEmail">0</Bool>
+        <!-- Strip user email -->
+        <Bool Name="RegBot">1</Bool>
+        <!-- Register hub bot on hub. -->
+        <Bool Name="UseBotNickAsHubSec">1</Bool>
+        <!-- Use hub bot nick instead of Hub-Security. -->
+        <Bool Name="RegOpChat">1</Bool>
+        <!-- Register Opchat bot on hub. -->
+        <Bool Name="TempBanRedir">1</Bool>
+        <!-- Redirect user when is temp banned. -->
+        <Bool Name="PermBanRedir">1</Bool>
+        <!-- Redirect user when is perm banned. -->
+        <Bool Name="EnableScripting">1</Bool>
+        <!-- Enable scripting interface. -->
+        <Bool Name="KeepSlowUsers">1</Bool>
+        <!-- Keep slow clients. -->
+        <Bool Name="CheckNewReleases">1</Bool>
+        <!-- Automatically check for new PtokaX releases on startup, working only in gui version. -->
+        <Bool Name="EnableTrayIcon">1</Bool>
+        <!-- Enable tray icon, working only in gui version. -->
+        <Bool Name="StartMinimized">0</Bool>
+        <!-- Start minimized, working only in gui version. -->
+        <Bool Name="FilterKickMessages">1</Bool>
+        <!-- Filter kick messages. -->
+        <Bool Name="SendKickMessagesToOps">1</Bool>
+        <!-- Send kick messages to OPs. -->
+        <Bool Name="SendStatusMessages">1</Bool>
+        <!-- Send status messages to OPs. -->
+        <Bool Name="SendStatusMessagesAsPm">0</Bool>
+        <!-- Send status messages as private messages. -->
+        <Bool Name="EnableTextFiles">1</Bool>
+        <!-- Enable text files. -->
+        <Bool Name="SendTextFilesAsPm">0</Bool>
+        <!-- Send text files as private messages. -->
+        <Bool Name="StopScriptOnError">0</Bool>
+        <!-- Stop script on error. -->
+        <Bool Name="MOTDAsPm">0</Bool>
+        <!-- Send MOTD as private message. -->
+        <Bool Name="DefloodReport">0</Bool>
+        <!-- Report deflood actions. -->
+        <Bool Name="ReplyToHubCommandsAsPm">0</Bool>
+        <!-- Reply to hub commands with private messages. -->
+        <Bool Name="DisableMOTD">0</Bool>
+        <!-- Disable MOTD. -->
+        <Bool Name="DontAllowPingers">0</Bool>
+        <!-- Don't allow hublist pingers. -->
+        <Bool Name="ReportPingers">0</Bool>
+        <!-- Report hublist pingers. -->
+        <Bool Name="Report3xBadPass">1</Bool>
+        <!-- Report 3x bad password. -->
+        <Bool Name="AdvancedPassProtection">1</Bool>
+        <!-- Advanced password protection. -->
+        <Bool Name="BindOnlySingleIp">0</Bool>
+        <!-- Listen only on single IP. -->
+        <Bool Name="ResolveToIp">1</Bool>
+        <!-- Resolve hostname to IP. -->
+        <Bool Name="NickLimitRedir">1</Bool>
+        <!-- Redir user when he's don't have nick in length limits. -->
+        <Bool Name="BanMessageShowIp">1</Bool>
+        <!-- Send ip in ban message. -->
+        <Bool Name="BanMessageShowRange">1</Bool>
+        <!-- Send range in ban message. -->
+        <Bool Name="BanMessageShowNick">1</Bool>
+        <!-- Send nick in ban message. -->
+        <Bool Name="BanMessageShowReason">1</Bool>
+        <!-- Send reason in ban message. -->
+        <Bool Name="BanMessageShowBy">1</Bool>
+        <!-- Send who create ban in ban message. -->
+        <Bool Name="ReportSuspiciousTag">1</Bool>
+        <!-- Report suspicious tag to OPs. -->
+        <Bool Name="LogScriptErrors">0</Bool>
+        <!-- Save script errors to log. -->
+        <Bool Name="NoQuackSupports">0</Bool>
+        <!-- Disallow clients sending buggy $Supports. -->
+        <Bool Name="HashPasswords">0</Bool>
+        <!-- Store registered users passwords as hashes -->
+    </Booleans>
+    <Integers>
+        <Integer Name="MaxUsers">500</Integer>
+        <!-- Max users limit -->
+        <Integer Name="MinShareLimit">0</Integer>
+        <!-- Min share limit. Max 9999. -->
+        <Integer Name="MinShareUnits">0</Integer>
+        <!-- Min share units. 0 = B, 1 = kB, 2 = MB, 3 = GB, 4 = TB. Max 4. -->
+        <Integer Name="MaxShareLimit">0</Integer>
+        <!-- Max share limit. Max 9999. -->
+        <Integer Name="MaxShareUnits">0</Integer>
+        <!-- Max share units. 0 = B, 1 = kB, 2 = MB, 3 = GB, 4 = TB. Max 4. -->
+        <Integer Name="MinSlotsLimit">0</Integer>
+        <!-- Min slots limit. -->
+        <Integer Name="MaxSlotsLimit">0</Integer>
+        <!-- Max slots limit. -->
+        <Integer Name="HubSlotRatioHubs">0</Integer>
+        <!-- Hubs for hub/slot ratio. -->
+        <Integer Name="HubSlotRatioSlots">0</Integer>
+        <!-- Slots for hub/slot ratio. -->
+        <Integer Name="MaxHubsLimit">0</Integer>
+        <!-- Max hubs limit. -->
+        <Integer Name="NoTagOption">0</Integer>
+        <!-- No tag option. 0 = accept, 1 = reject, 2 = redirect. Max 2. -->
+        <Integer Name="FullMyINFOOption">1</Integer>
+        <!-- Send full MyINFO to... 0 = to all, 1 = to profile, 2 = to none. Max 2. -->
+        <Integer Name="MaxChatLen">300</Integer>
+        <!-- Max chat length limit. -->
+        <Integer Name="MaxChatLines">5</Integer>
+        <!-- Max chat lines limit. -->
+        <Integer Name="MaxPmLen">512</Integer>
+        <!-- Max private message length limit. -->
+        <Integer Name="MaxPmLines">25</Integer>
+        <!-- Max private message lines limit. -->
+        <Integer Name="DefaultTempBanTime">20</Integer>
+        <!-- Default tempban time. Must be higher than 0. -->
+        <Integer Name="MaxPassiveSr">100</Integer>
+        <!-- Max passive search replys limit. -->
+        <Integer Name="MyINFODelay">30</Integer>
+        <!-- Time before new MyINFO from user is accepted for broadcast. -->
+        <Integer Name="MainChatMessages">20</Integer>
+        <!-- Main chat deflood messages count. Higher than 0, max 999. -->
+        <Integer Name="MainChatTime">20</Integer>
+        <!-- Main chat deflood time. Higher than 0, max 999. -->
+        <Integer Name="MainChatAction">2</Integer>
+        <!-- Main chat deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="SameMainChatMessages">5</Integer>
+        <!-- Same main chat deflood messages count. Higher than 0, max 999. -->
+        <Integer Name="SameMainChatTime">60</Integer>
+        <!-- Same main chat deflood time. Higher than 0, max 999. -->
+        <Integer Name="SameMainChatAction">2</Integer>
+        <!-- Same main chat deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="SameMultiMainChatMessages">2</Integer>
+        <!-- Same multiline main chat deflood messages count. Min 2, max 999. -->
+        <Integer Name="SameMultiMainChatLines">2</Integer>
+        <!-- Same multiline main chat deflood lines. Min 2, max 999. -->
+        <Integer Name="SameMultiMainChatAction">3</Integer>
+        <!-- Same multiline main chat deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="PmMessages">10</Integer>
+        <!-- Private message deflood messages count. Higher than 0, max 999. -->
+        <Integer Name="PmTime">10</Integer>
+        <!-- Private message deflood time. Higher than 0, max 999. -->
+        <Integer Name="PmAction">2</Integer>
+        <!-- Private message deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="SamePmMessages">5</Integer>
+        <!-- Same private message deflood messages count. Higher than 0, max 999. -->
+        <Integer Name="SamePmTime">60</Integer>
+        <!-- Same private message deflood time. Higher than 0, max 999. -->
+        <Integer Name="SamePmAction">2</Integer>
+        <!-- Same private message deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="SameMultiPmMessages">2</Integer>
+        <!-- Same multiline private message deflood messages count. Min 2, max 999. -->
+        <Integer Name="SameMultiPmLines">2</Integer>
+        <!-- Same multiline private message deflood lines. Min 2, max 999. -->
+        <Integer Name="SameMultiPmAction">3</Integer>
+        <!-- Same multiline private message action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="SearchMessages">2</Integer>
+        <!-- Search deflood messages count. Higher than 0, max 999. -->
+        <Integer Name="SearchTime">10</Integer>
+        <!-- Search deflood time. Higher than 0, max 999. -->
+        <Integer Name="SearchAction">1</Integer>
+        <!-- Search deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="SameSearchMessages">1</Integer>
+        <!-- Same search deflood messages count. Higher than 0, max 999. -->
+        <Integer Name="SameSearchTime">60</Integer>
+        <!-- Same search deflood time. Higher than 0, max 999. -->
+        <Integer Name="SameSearchAction">1</Integer>
+        <!-- Same search deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="MyINFOMessages">6</Integer>
+        <!-- MyINFO deflood messages count. Higher than 0, max 999. -->
+        <Integer Name="MyINFOTime">60</Integer>
+        <!-- MyINFO deflood time. Higher than 0, max 999. -->
+        <Integer Name="MyINFOAction">2</Integer>
+        <!-- MyINFO deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="GetNickListMessages">1</Integer>
+        <!-- GetNickList deflood messages count. Higher than 0, max 999. -->
+        <Integer Name="GetNickListTime">120</Integer>
+        <!-- GetNickList deflood time. Higher than 0, max 999. -->
+        <Integer Name="GetNickListAction">3</Integer>
+        <!-- GetNickList deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="NewConnectionsCount">10</Integer>
+        <!-- Connection deflood connecions count. Higher than 0, max 999. -->
+        <Integer Name="NewConnectionsTime">60</Integer>
+        <!-- Connection deflood time. Higher than 0, max 999. -->
+        <Integer Name="DefloodWarningCount">6</Integer>
+        <!-- Deflood warnings count. Higher than 0, max 999. -->
+        <Integer Name="DefloodWarningAction">2</Integer>
+        <!-- Deflood warnings action. 0 = disconnect, 1 = kick, 2 = tempban, 3 = permban. Max 3. -->
+        <Integer Name="DefloodTempBanTime">240</Integer>
+        <!-- Deflood tempban time. Higher than 0. -->
+        <Integer Name="GlobalMainChatMessages">20</Integer>
+        <!-- Global main chat messages count. Higher than 0, max 999. -->
+        <Integer Name="GlobalMainChatTime">10</Integer>
+        <!-- Global main chat time. Higher than 0, max 999. -->
+        <Integer Name="GlobalMainChatTimeOut">10</Integer>
+        <!-- Global main chat timeout. Higher than 0, max 999. -->
+        <Integer Name="GlobalMainChatAction">2</Integer>
+        <!-- Global main chat action. 0 = disabled, 1 = lock chat, 2 = send to ops with ips. Max 2. -->
+        <Integer Name="MinSearchLen">1</Integer>
+        <!-- Min search length. -->
+        <Integer Name="MaxSearchLen">96</Integer>
+        <!-- Max search length. -->
+        <Integer Name="MinNickLen">2</Integer>
+        <!-- Min nick length. Max 64. -->
+        <Integer Name="MaxNickLen">64</Integer>
+        <!-- Max nick length. Max 64. -->
+        <Integer Name="BruteForcePassProtectBanType">1</Integer>
+        <!-- Brute force password protection ban type. 0 = disabled, 1 = permban, 2 = tempban. -->
+        <Integer Name="BruteForcePassProtectTempBanTime">24</Integer>
+        <!-- Brute force password protection temp ban time. Higher than 0. -->
+        <Integer Name="MaxPmCountToUser">100</Integer>
+        <!-- Max pm count to same user per minute. -->
+        <Integer Name="MaxSimultaneousLogins">25</Integer>
+        <!-- Max simultaneous logins. Higher than 0, max 500. -->
+        <Integer Name="MainChatMessages2">120</Integer>
+        <!-- Secondary main chat deflood messages count. Higher than 0, max 29999. -->
+        <Integer Name="MainChatTime2">600</Integer>
+        <!-- Secondary main chat deflood time. Higher than 0, max 29999. -->
+        <Integer Name="MainChatAction2">3</Integer>
+        <!-- Secondary main chat deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="PmMessages2">60</Integer>
+        <!-- Secondary private message deflood messages count. Higher than 0, max 29999. -->
+        <Integer Name="PmTime2">300</Integer>
+        <!-- Secondary private message deflood time. Higher than 0, max 29999. -->
+        <Integer Name="PmAction2">3</Integer>
+        <!-- Secondary private message deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="SearchMessages2">31</Integer>
+        <!-- Secondary search deflood messages count. Higher than 0, max 29999. -->
+        <Integer Name="SearchTime2">300</Integer>
+        <!-- Secondary search deflood time. Higher than 0, max 29999. -->
+        <Integer Name="SearchAction2">3</Integer>
+        <!-- Secondary search deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="MyINFOMessages2">30</Integer>
+        <!-- Secondary myINFO deflood messages count. Higher than 0, max 29999. -->
+        <Integer Name="MyINFOTime2">900</Integer>
+        <!-- Secondary myINFO deflood time. Higher than 0, max 29999. -->
+        <Integer Name="MyINFOAction2">3</Integer>
+        <!-- Secondary myINFO deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="MaxMyINFOLen">256</Integer>
+        <!-- Maximum MyINFO length. Higher than 0, max 512. -->
+        <Integer Name="CTMMessages">500</Integer>
+        <!-- Primary ConnectToMe deflood count. Higher than 0, max 29999. -->
+        <Integer Name="CTMTime">60</Integer>
+        <!-- Primary ConnectToMe deflood time. Higher than 0, max 29999. -->
+        <Integer Name="CTMAction">1</Integer>
+        <!-- Primary ConnectToMe deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="CTMMessages2">5000</Integer>
+        <!-- Secondary ConnectToMe deflood count. Higher than 0, max 29999. -->
+        <Integer Name="CTMTime2">600</Integer>
+        <!-- Secondary ConnectToMe deflood time. Higher than 0, max 29999. -->
+        <Integer Name="CTMAction2">0</Integer>
+        <!-- Secondary ConnectToMe deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="RCTMMessages">250</Integer>
+        <!-- Primary RevConnectToMe deflood count. Higher than 0, max 29999. -->
+        <Integer Name="RCTMTime">60</Integer>
+        <!-- Primary RevConnectToMe deflood time. Higher than 0, max 29999. -->
+        <Integer Name="RCTMAction">1</Integer>
+        <!-- Primary RevConnectToMe deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="RCTMMessages2">2500</Integer>
+        <!-- Secondary RevConnectToMe deflood count. Higher than 0, max 29999. -->
+        <Integer Name="RCTMTime2">600</Integer>
+        <!-- Secondary RevConnectToMe deflood time. Higher than 0, max 29999. -->
+        <Integer Name="RCTMAction2">3</Integer>
+        <!-- Secondary RevConnectToMe deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="MaxCTMLen">128</Integer>
+        <!-- Maximum ConnectToMe length. Higher than 0, max 512. -->
+        <Integer Name="MaxRCTMLen">160</Integer>
+        <!-- Maximum RevConnectToMe length. Higher than 0, max 512. -->
+        <Integer Name="SRMessages">1000</Integer>
+        <!-- Primary SR deflood count. Higher than 0, max 29999. -->
+        <Integer Name="SRTime">60</Integer>
+        <!-- Primary SR deflood time. Higher than 0, max 29999. -->
+        <Integer Name="SRAction">1</Integer>
+        <!-- Primary SR deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="SRMessages2">10000</Integer>
+        <!-- Secondary SR deflood count. Higher than 0, max 29999. -->
+        <Integer Name="SRTime2">600</Integer>
+        <!-- Secondary SR deflood time. Higher than 0, max 29999. -->
+        <Integer Name="SRAction2">0</Integer>
+        <!-- Secondary SR deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="MaxSRLen">1024</Integer>
+        <!-- Maximum SR length. Higher than 0, max 8192. -->
+        <Integer Name="MaxDownAction">4</Integer>
+        <!-- Primary received data deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="MaxDownKb">128</Integer>
+        <!-- Primary received data deflood kB. Higher than 0, max 29999. -->
+        <Integer Name="MaxDownTime">60</Integer>
+        <!-- Primary received data deflood time. Higher than 0, max 29999. -->
+        <Integer Name="MaxDownAction2">5</Integer>
+        <!-- Secondary received data deflood action. 0 = disabled, 1 = ignore, 2 = warn, 3 = disconnect, 4 = kick, 5 = tempban, 6 = permban. Max 6. -->
+        <Integer Name="MaxDownKb2">256</Integer>
+        <!-- Secondary received data deflood kB. Higher than 0, max 29999. -->
+        <Integer Name="MaxDownTime2">300</Integer>
+        <!-- Secondary received data deflood time. Higher than 0, max 29999. -->
+        <Integer Name="ChatIntervalMessages">5</Integer>
+        <!-- Chat messages interval messages. Higher than 0, max 29999. -->
+        <Integer Name="ChatIntervalTime">10</Integer>
+        <!-- Chat messages interval time. Higher than 0, max 29999. -->
+        <Integer Name="PMIntervalMessages">5</Integer>
+        <!-- Private messages interval messages. Higher than 0, max 29999. -->
+        <Integer Name="PMIntervalTime">10</Integer>
+        <!-- Private messages interval time. Higher than 0, max 29999. -->
+        <Integer Name="SearchIntervalMessages">5</Integer>
+        <!-- Search interval count. Higher than 0, max 29999. -->
+        <Integer Name="SearchIntervalTime">60</Integer>
+        <!-- Search interval time. Higher than 0, max 29999. -->
+        <Integer Name="MaxConnSameIP">5</Integer>
+        <!-- Maximum connections from same IP. -->
+        <Integer Name="MinReConnTime">10</Integer>
+        <!-- Minimum reconnect time in seconds. Higher than 0, max 256. -->
+    </Integers>
+    <Strings>
+        <String Name="HubName">&lt;Enter hub name here&gt;</String>
+        <!-- Hub name. Min length 1, max 256. -->
+        <String Name="AdminNick">Admin</String>
+        <!-- Admin nick. Min length 1, max 64, $ is not allowed. -->
+        <String Name="HubAddress">&lt;Enter hub address here&gt;</String>
+        <!-- Hub address. Min length 1, max 256. -->
+        <String Name="TCPPorts">1209;411</String>
+        <!-- TCP ports. Min length 1, max 64. -->
+        <String Name="UDPPort">0</String>
+        <!-- UDP port. Min length 1, max 5. -->
+        <String Name="HubDescription">&lt;Enter hub description here&gt;</String>
+        <!-- Hub description. Max length 256. -->
+        <String Name="RedirectAddress">PtokaX-Alpha.CzDC.org:6891</String>
+        <!-- Main redirect address. Max length 256. -->
+        <String Name="RegisterServers">reg.hublist.org;serv.hubs-list.com;hublist.cz;hublist.dreamland-net.eu;allhublista.myip.hu;hubinfo.myip.hu;publichublist-nl.no-ip.org;reg.hublist.dk</String>
+        <!-- Hublist register servers. Max length 1024. -->
+        <String Name="RegOnlyMessage">Sorry, this hub is only for registered users.</String>
+        <!-- Registered users only message. Min length 1, max 256. -->
+        <String Name="RegOnlyRedirAddress"></String>
+        <!-- Registered users only redirect address. Max length 256. -->
+        <String Name="HubTopic"></String>
+        <!-- Hub topic. Max length 256. -->
+        <String Name="ShareLimitMessage">Your share is outside the limits. Min share is %[min], max share is %[max].</String>
+        <!-- Share limit message. Min length 1, max 256. Use %[min] for min share size and %[max] for max share size. -->
+        <String Name="ShareLimitRedirAddress"></String>
+        <!-- Share limit redirect address. Max length 256. -->
+        <String Name="SlotsLimitMessage">Your slots count is outside the limits. Min slots limit is %[min], max slots limit is %[max].</String>
+        <!-- Slot limit message. Min length 1, max 256. Use %[min] for min slots and %[max] for max slots. -->
+        <String Name="SlotsLimitRedirAddress"></String>
+        <!-- Slot limit redirect address. Max length 256. -->
+        <String Name="HubSlotRatioMessage">Your hubs/slots ratio outside the limit. Maximum allowed ratio is %[hubs]/%[slots].</String>
+        <!-- Hub/slot ratio limit message. Min length 1, max 256. Use %[hubs] for hubs and %[slots] for slots. -->
+        <String Name="HubSlotRatioRedirAddress"></String>
+        <!-- Hub/slot ratio limit redirect address. Max length 256. -->
+        <String Name="MaxHubsLimitMessage">Your hubs count is higher than allowed %[hubs] hubs.</String>
+        <!-- Max hubs limit message. Min length 1, max 256. Use %[hubs] for max hubs. -->
+        <String Name="MaxHubsLimitRedirAddress"></String>
+        <!-- Max hubs limit redirect address. Max length 256. -->
+        <String Name="NoTagMessage">Your client don&apos;t send description tag, or your client is not supported here.</String>
+        <!-- No tag rule message. Min length 1, max 256. -->
+        <String Name="NoTagRedirAddress"></String>
+        <!-- No tag rule redirect address. Max length 256. -->
+        <String Name="BotNick">PtokaX</String>
+        <!-- Hub bot nick. Min length 1, max 64, $ and space is not allowed. -->
+        <String Name="BotDescription"></String>
+        <!-- Hub bot description. Max length 64, $ is not allowed. -->
+        <String Name="BotEmail"></String>
+        <!-- Hub bot email. Max length 64, $ is not allowed. -->
+        <String Name="OpChatNick">OpChat</String>
+        <!-- OpChat bot nick. Min length 1, max 64, $ and space is not allowed. -->
+        <String Name="OpChatDescription"></String>
+        <!-- OpChat bot description. Max length 64, $ is not allowed. -->
+        <String Name="OpChatEmail"></String>
+        <!-- OpChat bot email. Max length 64, $ is not allowed. -->
+        <String Name="TempBanRedirAddress"></String>
+        <!-- Temp ban redirect address. Max length 256. -->
+        <String Name="PermBanRedirAddress"></String>
+        <!-- Perm ban redirect address. Max length 256. -->
+        <String Name="ChatCommandsPrefixes">!+-/*</String>
+        <!-- Chat commands prefixes. Min length 1, max 5. -->
+        <String Name="HubOwnerEmail"></String>
+        <!-- Hub owner email. Max length 64. -->
+        <String Name="NickLimitMessage">Your nick length is outside the limit. Allowed min is %[min] and max %[max].</String>
+        <!-- Nick limit message. Min length 1, max 256. Use %[min] for min length and %[max] for max length. -->
+        <String Name="NickLimitRedirAddress"></String>
+        <!-- Nick limit redirect address. Max length 256. -->
+        <String Name="MessageToAddToBanMessage"></String>
+        <!-- Additional message to ban message. Max lenght 256. -->
+        <String Name="Language"></String>
+        <!-- Language. -->
+        <String Name="IPv4Address"></String>
+        <!-- IP address for TCP/IPv4 -->
+        <String Name="IPv6Address"></String>
+        <!-- IP address for TCP/IPv6 -->
+    </Strings>
+</PtokaX>

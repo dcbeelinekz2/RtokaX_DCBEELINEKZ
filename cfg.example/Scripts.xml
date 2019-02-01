@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes" ?>
+<Scripts>
+    <Script>
+        <Name>example_script.lua</Name>
+        <Enabled>1</Enabled><!-- 1 for enabled, 0 for disabled -->
+    </Script>
+</Scripts>
